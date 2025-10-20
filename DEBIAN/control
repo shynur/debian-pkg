@@ -1,0 +1,7 @@
+Package: pkg-name
+Version: 0.1
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: shynur <shynur@outlook.com>
+Description: SEER TaskRunner and Its Manager

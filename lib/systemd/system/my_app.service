@@ -1,0 +1,16 @@
+[Unit]
+Description=my_app 的 daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/my_app
+WorkingDirectory=/工作目录
+Restart=always
+RestartSec=3
+StandardError=append:/日志目录/日志文件
+ExecStartPre=/bin/mkdir -p /日志目录
+ExecStartPre=/bin/touch /日志目录/日志文件
+ExecStartPre=/bin/chmod 666 /日志目录/日志文件
+
+[Install]
+WantedBy=multi-user.target
