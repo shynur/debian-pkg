@@ -1,7 +1,7 @@
-Package: pkg-name
-Version: 0.1
+Package: my-time-printer
+Version: 2025.1020.1037
 Section: base
 Priority: optional
 Architecture: amd64
 Maintainer: shynur <shynur@outlook.com>
-Description: SEER TaskRunner and Its Manager
+Description: 每隔一秒向 stderr 写入当前时间
