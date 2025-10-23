@@ -7,7 +7,7 @@ debian-pkgname.deb: FORCE
 	chmod a+rw  DEBIAN/control
 	_CUR_DIR_NAME=`basename $$PWD`;  \
 		cd ..;  \
-		dpkg-deb --build $$_CUR_DIR_NAME
+		dpkg-deb --compression=none --build $$_CUR_DIR_NAME
 	mv ../`basename $$PWD`.deb .
 	mv `basename $$PWD`.deb $@
 
