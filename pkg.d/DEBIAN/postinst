@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo '~~~~~ 初始化 ~~~~~'
+mkdir -p     /tmp/shynur/ws/my-time-printer
+chmod -R 777 /tmp/shynur/ws/my-time-printer
+echo ';; -*- eval: (auto-revert-tail-mode); -*-' >|/tmp/shynur/ws/my-time-printer/log.txt
+
+echo '~~~~ 服务配置 ~~~~'
+systemctl daemon-reload
+systemctl enable print-time-everysecond-d.service
+systemctl start  print-time-everysecond-d.service
+
+echo '<<<< 安装完成 <<<<'

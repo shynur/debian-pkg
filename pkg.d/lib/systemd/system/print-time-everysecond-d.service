@@ -1,0 +1,14 @@
+[Unit]
+Description=服务的描述
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/打印每秒时间.py
+WorkingDirectory=/tmp/shynur/ws/my-time-printer
+Restart=always
+RestartSec=10
+StandardError=append:/tmp/shynur/ws/my-time-printer/log.txt
+ExecStartPre=bash -c 'echo >>/tmp/shynur/ws/my-time-printer/log.txt'
+
+[Install]
+WantedBy=multi-user.target

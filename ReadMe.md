@@ -1,22 +1,4 @@
 # Debian Package 模板
-## 安装
-
-```bash
-make install
-```
-
-- 安装可执行文件
-- 开机自启
-- 自动重启进程
-- 日志重定向
-
-## 卸载
-
-```bash
-make remove
-```
-
-停止相关服务, 并卸载所有 `make install` 安装的东西.
 
 ____
 

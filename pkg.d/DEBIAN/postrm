@@ -1,0 +1,6 @@
+#! /bin/bash
+
+echo '~~~~ 删除残留文件 ~~~~'
+rm -rf /tmp/shynur/ws/my-time-printer
+
+echo '<<<<<< 卸载完成 <<<<<<'
