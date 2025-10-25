@@ -1,5 +1,5 @@
 ?*~
-\#?*#
+0;10;1c\#?*#
 .#?*
 
 /node_modules/
@@ -47,3 +47,4 @@ gcm.cache/
 compile_commands.json
 
 ?*.deb
+/pkg.d/DEBIAN/control
